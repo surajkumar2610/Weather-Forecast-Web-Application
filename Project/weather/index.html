@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="top">
+        <div class="menu" id="check" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>          
+        <label class="logo" >WeatherCast</label>
+        <ul>
+            <li><a href="index.html" class="home">home</a></li>
+            <li><a href="" class="contact">contact</a>
+                <div class="sub">
+                    <ul>
+                        <li><a href="tel:7992205297">Call</a></li>
+                        <li><a href="mailto:suraj.21scse1010044@galgotiasuniversity.edu.in">Mail</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="about.html" target="_blank" class="about">about</a></li>
+            <li><a href="mailto:suraj.21scse1010044@galgotiasuniversity.edu.in" class="feed">feedback</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="search">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="searchButton">Search</button>
+        </div>
+        <div id="weatherInfo">
+            <h2>Weather in <span id="cityName"></span></h2>
+            <p>Temperature: <span id="temperature"></span>&deg;C</p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Time zone:<span id="zone"></span> </p>
+            <p>Wind Speed: <span id="speed"></span> | Wind Direction: <span id="direction"></span></p>
+            <p>Pressure: <span id="pressure"></span> | Feels like: <span id="feel"></span></p>
+            <p> UV index: <span id="index"></span></p>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
